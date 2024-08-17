@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <title>Mary Fashion Home</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    .social-head {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: orange;
+        font-weight: bold;
+    }
+    
+    .social1 {
+        margin: 0px 30px;
+    }
+    
+    .social-head .social1 button {
+        height: 35px;
+        width: 35px;
+        border: none;
+        border-radius: 40px;
+        margin: 0px 10px;
+    }
+    
+    .social-head .social1 a {
+        text-decoration: none;
+        color: black;
+        transition: color .4s;
+    }
+    
+    .social-head .social1 a:hover {
+        text-decoration: underline;
+        color: blue;
+    }
+    
+    header {
+        display: flex;
+        align-items: center;
+        background-color: rgb(36, 28, 28);
+        color: white;
+    }
+    
+    .logo-hold {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+    .logo-hold .logo {
+        width: 60px;
+        margin: 0px 10px;
+    }
+    
+    .logo-hold h1 {
+        font-size: 32px;
+    }
+    
+    nav {
+        margin-left: auto;
+    }
+    
+    nav ul li {
+        display: inline-flex;
+        margin: 0px 30px;
+    }
+    
+    nav ul li a::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 0;
+        height: 3px;
+        transition: width .6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    
+    nav ul li a:hover::after {
+        background-color: orange;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .body1 {
+        background-image: url(bg\ body.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* height: 400px; */
+    }
+    
+    .body-img {
+        background-color: rgba(0, 0, 0, 0.651);
+        padding-bottom: 80px;
+    }
+    
+    .context {
+        padding: 10px;
+    }
+    
+    .context h1 {
+        color: white;
+        font-size: 55px;
+        text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.50);
+        margin-left: 30px;
+    }
+    
+    .context p {
+        margin-left: 30px;
+        font-size: 23px;
+        color: yellow;
+        font-style: italic;
+        font-family: cursive;
+        margin-top: -20px;
+    }
+    
+    .context .read-btn {
+        margin-left: 30px;
+        height: 43px;
+        width: 110px;
+        background-color: black;
+        border: none;
+        color: white;
+        font-size: 15px;
+        border-radius: 4px;
+        transition: all .5s;
+    }
+    
+    .context .read-btn:hover {
+        background-color: rgb(66, 43, 0);
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    @media screen and (max-width:720px) {
+        .social-head {
+            flex-wrap: wrap;
+            font-size: 13px;
+        }
+        .social-head .social1 {
+            display: block;
+            margin: auto;
+        }
+        .social-head .social1 button {
+            height: 30px;
+            width: 30px;
+        }
+        header {
+            flex-wrap: wrap;
+        }
+        header .logo-hold {
+            margin: auto;
+        }
+        header .logo-hold .logo {
+            width: 60px;
+        }
+        header .logo-hold h1 {
+            font-size: 25px;
+        }
+        nav {
+            display: block;
+            margin: auto;
+        }
+        nav ul {
+            margin-left: -20px;
+        }
+        nav ul li {
+            margin-left: 1px;
+        }
+        nav ul li a {
+            font-size: 12px;
+        }
+        .context h1 {
+            font-size: 25px;
+        }
+        .context p {
+            font-size: 15px;
+            margin-top: 20px;
+        }
+        .context .read-btn {
+            height: 30px;
+            width: 80px;
+            font-size: 13px;
+        }
+        .about-section {
+            flex-wrap: wrap;
+        }
+        .about .about-section .about-text h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+        .about .about-section .about-text p {
+            font-size: 12px;
+        }
+        .about-section .about-container {
+            width: 300px;
+        }
+    }
+    /* SLIDE STYLING AREA */
+    
+    .slide-area {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .container {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .wrapper {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+    }
+    
+    @keyframes slide {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(0);
+        }
+        30% {
+            transform: translateX(-100%);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        55% {
+            transform: translateX(-200%);
+        }
+        50% {
+            transform: translateX(-100%);
+        }
+        65% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-200%);
+        }
+        75% {
+            transform: translateX(-200%);
+        }
+        80% {
+            transform: translateX(-300%);
+        }
+        100% {
+            transform: translateX(-300%);
+        }
+    }
+    
+    .wrapper img {
+        width: 100%;
+        animation: slide 18s infinite;
+    }
+    /* SELECTION STYLING */
+    
+    .selection-area .label {
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .selection-area .label h2::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 12%;
+        height: 6px;
+        background-color: orange;
+        border-radius: 30px;
+    }
+    
+    .shold {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .shold .hold1 {
+        width: fit-content;
+        padding: 20px;
+        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.40);
+        margin: 10px 30px;
+        transition: all .6s;
+    }
+    
+    .shold .hold1:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+    }
+    
+    .shold .img-hold {
+        width: 200px;
+        display: block;
+        margin: auto;
+    }
+    
+    .shold .hold1 h3 {
+        text-align: center;
+        margin: 2px 0px;
+    }
+    
+    .shold .hold1 p {
+        margin: 2px 0px;
+        text-align: center;
+    }
+    
+    .shold .hold1 .star-hold {
+        color: orange;
+        width: fit-content;
+        display: block;
+        margin: auto;
+    }
+    
+    .shold .hold1 button {
+        padding: 7px;
+        width: 100%;
+        margin-top: 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        transition: all .5s;
+    }
+    
+    .shold .hold1 button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    /* ABOUT SECTION */
+    
+    .about-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(rgb(214, 212, 212), gray);
+        margin-top: 40px;
+    }
+    
+    .about-section .about-text {
+        width: 400px;
+        padding: 20px 0px;
+        margin: 10px 40px;
+    }
+    
+    .about-section .about-text h1 {
+        font-size: 36px;
+    }
+    
+    .about-section .about-text p {
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+        text-align: justify;
+    }
+    
+    .about-section .about-img {
+        margin: 10px 40px;
+    }
+    
+    .about-container {
+        width: 400px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .about .label {
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .about .label h2::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 12%;
+        height: 6px;
+        background-color: orange;
+        border-radius: 30px;
+    }
+    /* CONTACT STYLING SECTION */
+    
+    .contact-hold {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact .label {
+        text-align: center;
+        font-size: 22px;
+    }
+    
+    .contact .label h2::after {
+        content: "";
+        display: block;
+        margin: auto;
+        width: 12%;
+        height: 6px;
+        background-color: orange;
+        border-radius: 30px;
+    }
+    
+    .contact-hold .hold {
+        width: 200px;
+        background-color: rgb(41, 34, 34);
+        box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.20);
+        padding: 10px;
+        text-align: center;
+        margin: 10px 30px;
+    }
+    
+    .contact-hold .hold h2 {
+        color: white;
+    }
+    
+    .contact-hold .hold p {
+        color: orange;
+        margin-top: -10px;
+    }
+    
+    .contact-hold .hold .profile {
+        height: 65px;
+        width: 65px;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+        border: none;
+        background-image: url(bg\ image.jpg);
+        background-size: cover;
+    }
+    
+    .contact-hold .hold .account button {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        margin: 0px 5px;
+        transition: all .6s;
+    }
+    
+    .contact-hold .hold .account button:hover {
+        transform: translateX(3px);
+        background-color: rgb(160, 104, 0);
+        color: white;
+        cursor: pointer;
+    }
+    
+    .contact-hold .hold .call {
+        padding: 10px;
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        border-radius: 3px;
+        border: none;
+        background-color: black;
+        color: white;
+        transition: .5s;
+        cursor: pointer;
+    }
+    
+    .contact-hold .hold .call:hover {
+        background-color: rgb(160, 104, 0);
+    }
+    
+    .contact-hold .hold .call a {
+        text-decoration: none;
+        color: white;
+        margin-left: 10px;
+    }
+    
+    @media screen and (max-width: 720px) {
+        .contact-hold {
+            flex-wrap: wrap;
+        }
+    }
+    /* FOOTER STYLING SECTION */
+    
+    footer {
+        background-image: url(slide\ 5.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 70px;
+    }
+    
+    footer .foot-group {
+        background-color: rgba(0, 0, 0, 0.911);
+        color: white;
+        /* padding: 10px; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
+    .foot1 {
+        width: fit-content;
+        transition: all .6s;
+        height: 340px;
+        margin: 4px 10px;
+    }
+    
+    .foot1 p {
+        width: 290px;
+        text-align: justify;
+        margin-left: 20px;
+    }
+    
+    .foot1 .learn-btn {
+        margin-left: 20px;
+        background-color: rgb(189, 124, 4);
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        transition: .6s;
+    }
+    
+    .foot1 .learn-btn:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .foot1 h1 {
+        font-size: 25px;
+    }
+    
+    .foot1 .logo {
+        width: 50px;
+    }
+    
+    .foot1 nav li {
+        padding: 10px 0px;
+        list-style: none;
+        transition: .6s;
+        padding-left: 10px;
+    }
+    
+    .foot1 nav li:hover {
+        margin-left: 7px;
+        background-color: rgba(136, 89, 2, 0.651);
+        cursor: pointer;
+    }
+    
+    .foot1 nav li a {
+        color: white;
+        text-decoration: none;
+        margin-left: 14px;
+    }
+    
+    .foot1 textarea {
+        padding: 10px;
+        font-size: 15px;
+        height: 90px;
+        width: 170px;
+    }
+    
+    .foot1 .send-btn {
+        display: block;
+        margin: auto;
+        padding: 10px;
+        width: 100%;
+        font-weight: bold;
+        border-radius: 50px;
+        border: none;
+        transition: all .5s;
+    }
+    
+    .foot1 .send-btn:hover {
+        background-color: rgb(160, 104, 0);
+        cursor: pointer;
+    }
+    
+    .social-btn button {
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        border: none;
+        margin: 0px 5px;
+        transition: .6s;
+    }
+    
+    .social-btn button:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+        background-color: rgb(160, 104, 0);
+        color: white;
+    }
+    
+    @media screen and (max-width: 720px) {
+        .foot-group .foot1 h1 {
+            font-size: 19px;
+        }
+        .foot-group .foot1 p {
+            width: 270px;
+        }
+        .chat {
+            margin-left: -30px;
+        }
+    }
+    
+    .author {
+        background-color: rgb(95, 63, 3);
+        padding: 2px;
+        text-align: center;
+        color: white;
+        letter-spacing: 1px;
+    }
+    
+    .chat {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: none;
+        background-color: rgb(180, 118, 2);
+        color: white;
+        font-size: 24px;
+        top: 87%;
+        left: 90%;
+        position: fixed;
+        text-shadow: 3px 3px 30px black;
+    }
+</style>
+
+<body>
+
+    <div class="social-head">
+        <div class="social1">
+            <button><i class="fab fa-facebook-f"></i></button>
+            <label for="">Contact Us:</label>
+            <a href="tel:+">+234 333 222 2322</a>
+            <a href="tel:+">+234 333 222 2322</a>
+        </div>
+        <div class="social1">
+            <button><i class="fas fa-envelope"></i></button>
+            <label for="">Email Us: <a href="mailto:maryfashion@gmail.com">maryfashion@gmail.com</a></label>
+
+        </div>
+    </div>
+    <header>
+        <div class="logo-hold">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="100%">
+            </div>
+            <h1>Mary Fashion Home</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#body1">Home</a>
+                </li>
+                <li>
+                    <a href="#selection">Selections</a>
+                </li>
+                <li>
+                    <a href="#about">About us</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact us</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="body1" class="body1">
+        <div class="body-img">
+            <div class="context">
+                <h1>Enjoy 100% Quality <br>
+                    <font>of Our Products and Services</font>
+                </h1>
+                <p>Bringing out the Beauty inside you. . . . . . </p>
+                <button class="read-btn">Read More</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-area">
+
+
+        <div class="container">
+            <div class="wrapper">
+                <img src="slide 1.png" alt="">
+                <img src="slide 4.png" alt="">
+                <img src="slide 3.png" alt="">
+                <img src="slide 2.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <img src="slide 2.png" alt="">
+                <img src="slide 1.png" alt="">
+                <img src="slide 7.png" alt="">
+                <img src="slide 6.png" alt="">
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <img src="slide 4.png" alt="">
+                <img src="slide 3.png" alt="">
+                <img src="slide 2.png" alt="">
+                <img src="slide 5.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="wrapper">
+                <img src="slide 6.png" alt="">
+                <img src="slide 1.png" alt="">
+                <img src="slide 4.png" alt="">
+                <img src="slide 6.png" alt="">
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- SELECTION AREA -->
+
+
+    <div id="selection" class="selection-area">
+        <div class="label">
+            <h2>Best Selection</h2>
+        </div>
+
+        <div class="shold">
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="body1.jpg" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 7.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 2.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 1.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+
+
+        <div class="shold">
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 5.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 2.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 3.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 6.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+
+
+        <div class="shold">
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 3.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 7.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 1.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="hold1">
+                <div class="img-hold">
+                    <img src="slide 3.png" width="100%">
+                </div>
+                <h3>Super Braided Hair</h3>
+                <p>$10.00</p>
+                <div class="star-hold">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-stroke"></i>
+                </div>
+                <button>Buy Now</button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="about" class="about">
+        <div class="label">
+            <h2>About Us</h2>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+                <h1>Mary Fashion Home</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor et, obcaecati quaerat dicta eum adipisci. Hic consectetur ipsam esse laudantium ratione sapiente voluptatem ex quod nihil quis. Nulla provident a voluptate, deleniti quisquam
+                    nobis, facilis corporis rerum placeat laborum accusamus.</p>
+            </div>
+
+            <div class="about-img">
+                <div class="about-container">
+                    <div class="wrapper">
+                        <img src="slide 4.png" alt="">
+                        <img src="slide 3.png" alt="">
+                        <img src="slide 2.png" alt="">
+                        <img src="slide 5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="contact" class="contact">
+        <div class="label">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="contact-hold">
+            <div class="hold">
+                <button class="profile"></button>
+                <h2>Mrs. Margrette </h2>
+                <p>General Manager</p>
+                <div class="account">
+                    <button><i class="fab fa-facebook-f"></i></button>
+                    <button><i class="fab fa-whatsapp"></i></button>
+                    <button><i class="fab fa-twitter"></i></button>
+                    <button><i class="fab fa-instagram"></i></button>
+                </div>
+                <button class="call"><i class="fas fa-phone"></i><a href="tel:+234803577485">234803577485</a></button>
+            </div>
+
+            <div class="hold">
+                <button class="profile"></button>
+                <h2>Mrs. Margrette </h2>
+                <p>General Manager</p>
+                <div class="account">
+                    <button><i class="fab fa-facebook-f"></i></button>
+                    <button><i class="fab fa-whatsapp"></i></button>
+                    <button><i class="fab fa-twitter"></i></button>
+                    <button><i class="fab fa-instagram"></i></button>
+                </div>
+                <button class="call"><i class="fas fa-phone"></i><a href="tel:+234803577485">234803577485</a></button>
+            </div>
+
+            <div class="hold">
+                <button class="profile"></button>
+                <h2>Mrs. Margrette </h2>
+                <p>General Manager</p>
+                <div class="account">
+                    <button><i class="fab fa-facebook-f"></i></button>
+                    <button><i class="fab fa-whatsapp"></i></button>
+                    <button><i class="fab fa-twitter"></i></button>
+                    <button><i class="fab fa-instagram"></i></button>
+                </div>
+                <button class="call"><i class="fas fa-phone"></i><a href="tel:+234803577485">234803577485</a></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="foot-group">
+
+            <div class="foot1">
+                <div class="foot-logo">
+                    <div class="logo-hold">
+                        <div class="logo">
+                            <img src="logo.png" alt="logo" width="100%">
+                        </div>
+                        <h1>Mary Fashion Home</h1>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fugiat facilis quas numquam enim nisi cumque, ipsa rerum perferendis architecto officiis laudantium aliquam, quidem natus ad adipisci ab doloribus labore!</p>
+                <button class="learn-btn">Learn More</button>
+            </div>
+
+            <div class="foot1" id="foot-link">
+                <h1>Other Links</h1>
+                <nav>
+                    <li> <i class="fas fa-angle-right"></i>
+                        <a href="">Home</a>
+                    </li>
+                    <li><i class="fas fa-angle-right"></i>
+                        <a href="">Selection</a>
+                    </li>
+                    <li><i class="fas fa-angle-right"></i>
+                        <a href="">About</a>
+                    </li>
+                    <li><i class="fas fa-angle-right"></i>
+                        <a href="">Contact</a>
+                    </li>
+                </nav>
+            </div>
+
+
+            <div class="foot1">
+                <h1>Send Message</h1>
+                <textarea name="" id=""></textarea>
+                <button class="send-btn">Send Message</button>
+            </div>
+
+            <div class="foot1">
+                <h1>Social Media</h1>
+                <div class="social-btn">
+                    <button><i class="fab fa-facebook-f"></i></button>
+                    <button><i class="fab fa-instagram"></i></button>
+                    <button><i class="fab fa-twitter"></i></button>
+                    <button><i class="fab fa-whatsapp"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Created and Developed By Onyekachi Ebunoha &copy;</p>
+        </div>
+    </footer>
+
+    <a href="#"><button class="chat"><i class="fab fa-weixin"></i></button></a>
+
+</body>
+
+
+
+</html>
